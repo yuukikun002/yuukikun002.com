@@ -28,47 +28,47 @@ div{
 
 .one{
   grid-area: one;
-  background-color: #9e3700;
+  background-color: #42f5aa;
   text-align: center;
   padding: 15px;
 }
 
 .two{
   grid-area: two;
-  background-color: #eae4ec;
+  background-color: #42f5aa;
   text-align: center;
   padding: 15px;
 }
 
 .three{
   grid-area: three;
-  background-color: #cdcdcb;
+  background-color: #42f5aa;
   text-align: center;
   padding: 15px;
 }
 
 .four{
   grid-area: four;
-  background-color: green;
+  background-color: #42f5aa;
   text-align: center;
   padding: 15px;
 }
 
 .five{
   grid-area: five;
-  background-color: #cdcdcb;
+  background-color: #42f5aa;
   text-align: center;
   padding: 15px;
 }
 .six{
   grid-area: six;
-  background-color: #cdcdcb;
+  background-color: #42f5aa;
   text-align: center;
   padding: 15px;
 }
 .seven{
   grid-area: seven;
-  background-color: #cdcdcb;
+  background-color: #42f5aa;
   text-align: center;  
   padding: 15px;
 }
