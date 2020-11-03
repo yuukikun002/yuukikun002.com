@@ -18,7 +18,7 @@
         <div class="grid">
         <div class="one"><a href="index.html"> Home Page</a></div>
 	    <div class="two">
-	    	<div onclick="drop()" class="dropShop">LOL-BF-Prepaid Shop</div>
+	    	<div onclick="drop()" class="dropShop">LOL-BF-Prepaid Shop <i class="fa fa-angle-down" style="font-size:24px"></i></div>
 	    	<ul id="dropScript" class="shop-content">
 		    <li><a href="#">League of Legends Shop</a></li>
 		    <li><a href="#">Brave Frontier Bundles Shop</a></li>
@@ -26,7 +26,7 @@
 			</ul>
 	    </div>
 	    <nav class="three">
-	    	<div onclick="drop2()" class="dropMicrosoft">Microsoft Service</div>
+	    	<div onclick="drop2()" class="dropMicrosoft">Microsoft Service <i class="fa fa-angle-down" style="font-size:24px"></i></div>
 	    	<ul id="dropScript2" class="microsoft-content">
 		    <li><a href="#">Office 365 - One Drive 5TB</a></li>
 		    <li><a href="#">Key Windows/Office</a></li>
@@ -56,7 +56,32 @@ function drop() {
 }
 
 function drop2() {
-  document.getElementById("dropScript").classList.toggle("show");
+  document.getElementById("dropScript").classList.toggle("show2");
 }
 
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropShop')) {
+    var dropdowns = document.getElementsByClassName("shop-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropMicrosoft')) {
+    var dropdowns = document.getElementsByClassName("microsoft-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show2')) {
+        openDropdown.classList.remove('show2');
+      }
+    }
+  }
+}
 </script>
