@@ -123,6 +123,9 @@ three
   padding: 35px;
 }
 
+.show{
+  display: block;
+}
 .show2{
   display: block;
 }
