@@ -18,16 +18,16 @@
         <div class="grid">
         <div class="one"><a href="index.html"> Home Page</a></div>
 	    <div class="two">
-	    	<div class="dropShop">LOL-BF-Prepaid Shop</div>
-	    	<ul class="shop-content">
+	    	<div onclick="drop()" class="dropShop">LOL-BF-Prepaid Shop</div>
+	    	<ul id="dropScript" class="shop-content">
 		    <li><a href="#">League of Legends Shop</a></li>
 		    <li><a href="#">Brave Frontier Bundles Shop</a></li>
 		    <li><a href="#">Phone Prepaid Cards Shop</a></li>
 			</ul>
 	    </div>
 	    <nav class="three">
-	    	<div class="dropMicrosoft">Microsoft Service</div>
-	    	<ul class="microsoft-content">
+	    	<div onclick="drop2()" class="dropMicrosoft">Microsoft Service</div>
+	    	<ul id="dropScript2" class="microsoft-content">
 		    <li><a href="#">Office 365 - One Drive 5TB</a></li>
 		    <li><a href="#">Key Windows/Office</a></li>
 		    <li><a href="#">Windows Installation Service</a></li>
@@ -49,3 +49,14 @@
         </div>
 	</footer>
 </html>
+
+<script>
+function drop() {
+  document.getElementById("dropScript").classList.toggle("show");
+}
+
+function drop2() {
+  document.getElementById("dropScript").classList.toggle("show");
+}
+
+</script>

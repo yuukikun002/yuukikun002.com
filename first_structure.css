@@ -122,3 +122,7 @@ three
   text-align: center;
   padding: 35px;
 }
+
+.show2{
+  display: block;
+}
