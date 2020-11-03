@@ -1,0 +1,74 @@
+/*
+Yay CSS Comments
+Blah blah
+*/
+
+.content{
+
+}
+
+.grid{
+  display: grid;
+
+  grid-template-areas:
+  "one two three four five six seven";
+
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-row-gap: .5em;
+  grid-column-gap: .5em;
+
+  height: 5vh;
+  margin: 0px;
+}
+
+div{
+  padding: 0em;
+}
+
+.one{
+  grid-area: one;
+  background-color: #9e3700;
+  text-align: center;
+  padding: 15px;
+}
+
+.two{
+  grid-area: two;
+  background-color: #eae4ec;
+  text-align: center;
+  padding: 15px;
+}
+
+.three{
+  grid-area: three;
+  background-color: #cdcdcb;
+  text-align: center;
+  padding: 15px;
+}
+
+.four{
+  grid-area: four;
+  background-color: green;
+  text-align: center;
+  padding: 15px;
+}
+
+.five{
+  grid-area: five;
+  background-color: #cdcdcb;
+  text-align: center;
+  padding: 15px;
+}
+.six{
+  grid-area: six;
+  background-color: #cdcdcb;
+  text-align: center;
+  padding: 15px;
+}
+.seven{
+  grid-area: seven;
+  background-color: #cdcdcb;
+  text-align: center;  
+  padding: 15px;
+}
