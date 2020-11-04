@@ -48,7 +48,7 @@
 
         </div>
 	</footer>
-</html>
+	</html>
 
 <script>
 function drop() {
@@ -75,12 +75,12 @@ window.onclick = function(event) {
 
 window.onclick = function(event) {
   if (!event.target.matches('.dropMicrosoft')) {
-    var dropdowns = document.getElementsByClassName("microsoft-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show2')) {
-        openDropdown.classList.remove('show2');
+    var dropdowns2 = document.getElementsByClassName("microsoft-content");
+    var j;
+    for (j = 0; j < dropdowns2.length; j++) {
+      var openDropdown2 = dropdowns2[j];
+      if (openDropdown2.classList.contains('show')) {
+        openDropdown2.classList.remove('show');
       }
     }
   }
