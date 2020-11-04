@@ -66,7 +66,7 @@ function drop() {
 }
 
 function drop2() {
-  document.getElementById("dropScript2").classList.toggle("show");
+  document.getElementById("dropScript2").classList.toggle("show2");
 }
 
 // Close the dropdown if the user clicks outside of it
@@ -89,8 +89,8 @@ window.onclick = function(event) {
     var j;
     for (j = 0; j < dropdowns2.length; j++) {
       var openDropdown2 = dropdowns2[j];
-      if (openDropdown2.classList.contains('show')) {
-        openDropdown2.classList.remove('show');
+      if (openDropdown2.classList2.contains('show2')) {
+        openDropdown2.classList2.remove('show2');
       }
     }
   }

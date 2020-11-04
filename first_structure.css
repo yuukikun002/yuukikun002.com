@@ -127,6 +127,10 @@ three
   display: block;
 }
 
+.show2{
+  display: block;
+}
+
 .contents{
   border:1px solid black;
   background-color:white;
