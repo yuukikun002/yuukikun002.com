@@ -126,3 +126,23 @@ three
 .show{
   display: block;
 }
+
+.contents{
+  border:1px solid black;
+  background-color:white;
+  height:520px;
+  position:absolute;
+  left:000px;
+  right:000px;
+  top:360px;
+}
+
+footer{
+  border:1px solid black;
+  background-color:#42f5aa;
+  height:600px;
+  position:absolute;
+  left:000px;
+  right:000px;
+  top:880px;
+}
