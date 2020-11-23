@@ -142,10 +142,9 @@ three
   top:460px;
 }
 
+
 footer{
     display: flex;
-    justify-content:  center;
-    align-items: center;
     position: relative;
     bottom: 0;
     left: 0;
@@ -158,9 +157,9 @@ footer{
 .footer_wrapper{
     display: flex;
     justify-content:  space-between;
-    align-items: center;
+    align-items: left;
     flex-wrap: wrap;
-    max-width: 1140px;
+    max-width: 2000px;
     width: 100%;
     margin: auto;
     margin: 0 3.5rem 0 3.5rem;
