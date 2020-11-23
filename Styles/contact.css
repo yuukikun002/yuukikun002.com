@@ -1,0 +1,122 @@
+/*
+Yay CSS Comments
+Blah blah
+*/
+
+.content{
+
+}
+
+.grid{
+  display: grid;
+
+  grid-template-areas:
+  "one two three four five";
+
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-row-gap: .5em;
+  grid-column-gap: .5em;
+
+  height: 7vh;
+  margin: 0px;
+}
+
+div{
+  padding: 0em;
+}
+
+
+
+.map{
+  left: 100px;
+}
+
+.one{
+  grid-area: one;
+  background-color: #42f5aa;
+  text-align: center;
+  padding: 35px;
+}
+
+.two{
+  grid-area: two;
+  background-color: #42f5aa;
+  text-align: center;
+  padding: 35px;
+}
+
+.three{
+  grid-area: three;
+  background-color: #42f5aa;
+  text-align: center;
+  padding: 35px;
+}
+
+.four{
+  grid-area: four;
+  background-color: #42f5aa;
+  text-align: center;
+  padding: 35px;
+}
+
+.five{
+  grid-area: five;
+  background-color: #42f5aa;
+  text-align: center;
+  padding: 35px;
+}
+
+.show{
+  display: block;
+}
+
+.show2{
+  display: block;
+}
+
+.contents{
+  border:1px solid black;
+  background-color:white;
+  height:220px;
+  position:absolute;
+  left:000px;
+  right:000px;
+  top:460px;
+}
+
+footer{
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    top: 500px;
+    padding: 2rem;
+    background: #252525;
+    color: white;
+}
+
+.footer_wrapper{
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    margin: 0 3.5rem 0 3.5rem;
+}
+
+.footer_wrapper a{
+    color: white;
+}
+.footer_wrapper a:hover{
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+.footer_right{
+    text-align: right;
+}
