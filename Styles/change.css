@@ -11,12 +11,7 @@
   "one two three four";
 
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-row-gap: .5em;
-  grid-column-gap: .5em;
 
-  height: 23vh;
-  margin: 0px;
   
 }
 
