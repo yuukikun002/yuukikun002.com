@@ -27,14 +27,17 @@ div{
   "one two three four";
 
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-row-gap: .5em;
-  grid-column-gap: .5em;
 
-  height: 7vh;
-  margin: 0px;
 }
 
+.contents{
+  border:1px solid black;
+  background-color:white;
+  height:1000px;
+  position:absolute;
+  left:000px;
+  right:000px;
+}
 /*
 two
 */
@@ -141,15 +144,7 @@ three
   display: block;
 }
 
-.contents{
-  border:1px solid black;
-  background-color:white;
-  height:1000px;
-  position:absolute;
-  left:000px;
-  right:000px;
-  top:460px;
-}
+
 
 
 footer{
