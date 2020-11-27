@@ -3,6 +3,12 @@ Yay CSS Comments
 Blah blah
 */
 
+.all{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
 .content{
 
 }
@@ -11,7 +17,7 @@ Blah blah
   display: grid;
 
   grid-template-areas:
-  "one two three four five";
+  "one two three four";
 
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
@@ -135,7 +141,7 @@ three
 .contents{
   border:1px solid black;
   background-color:white;
-  height:520px;
+  height:1000px;
   position:absolute;
   left:000px;
   right:000px;
@@ -148,7 +154,7 @@ footer{
     position: relative;
     bottom: 0;
     left: 0;
-    top: 500px;
+    top: 1000px;
     padding: 2rem;
     background: #252525;
     color: white;
@@ -165,11 +171,15 @@ footer{
     margin: 0 3.5rem 0 3.5rem;
 }
 
+.link_footer{
+    text-decoration: underline;
+
+}
+
 .footer_wrapper a{
     color: white;
 }
 .footer_wrapper a:hover{
-    text-decoration: underline;
     text-decoration-style: wavy;
 }
 

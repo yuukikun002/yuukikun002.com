@@ -7,6 +7,8 @@
 		<title>Duy Le</title>
 		<link rel='stylesheet' href='Styles\athens.css'/>
 	</head>
+<div class = "all">
+
 	<body>
 		<div class="content1">
 		<h1><a href="athens.html"><img src="Photos\logo-Grunge.png" alt="Logo" width="200"></img></a></h1>
@@ -16,10 +18,10 @@
         </div>
 
         <div class="grid">
-        <div class="one"><a href="athens.html"> Home Page</a></div>
-	    <div class="two"><a href="news.html"> News & Announcements</a></div>
-	    <div class="three"><a href="calendar.html"> Event Calendar</a></div>
-	    <div class="four"><a href="contact.html"> Contact Us</a></div>
+        <input class="one" type="button" onclick="test.location.href='contents.html';document.getElementById('test').frameBorder=1" value="Home Page">
+	    <input class="two" type="button" onclick="test.location.href='news.html';document.getElementById('test').frameBorder=1" value="News & Announcements">
+        <input class="three" type="button" onclick="test.location.href='calendar.html';document.getElementById('test').frameBorder=1" value="Event Calendar">
+        <input class="four" type="button" onclick="test.location.href='map.html';document.getElementById('test').frameBorder=1" value="Contact Us">
 	    </div>
 
 		<hr>
@@ -39,23 +41,23 @@
 
 	<footer >
         <div class="footer_wrapper">
-            <div>
-                <a href="athens.html">
+            <div class="link_footer">
+                <a onclick="test.location.href='contents.html';document.getElementById('test').frameBorder=1">
                 Home 
                 </a>
                 <br/>
                 <br/> 
-                <a href="news.html">
+                <a onclick="test.location.href='news.html';document.getElementById('test').frameBorder=1">
                 News & Announcements 
                 </a>
                 <br/>
                 <br/>
-                <a href="calendar.html">
+                <a onclick="test.location.href='calendar.html';document.getElementById('test').frameBorder=1">
                 Event Calendar
                 </a>
                 <br/>
                 <br/>
-                <a href="contact.html">
+                <a onclick="test.location.href='map.html';document.getElementById('test').frameBorder=1">
                 Contact Us
                 </a>
             </div>
@@ -78,6 +80,7 @@
             </div> 
         </div>
     </footer>
+</div>
 	</html>
 
 <script>
