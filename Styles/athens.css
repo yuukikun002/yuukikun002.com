@@ -13,6 +13,13 @@ Blah blah
 
 }
 
+
+
+div{
+  padding: 0em;
+}
+
+
 .grid{
   display: grid;
 
