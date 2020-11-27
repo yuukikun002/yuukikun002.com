@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Duy Le">
+		<title>Duy Le</title>
+		<link rel='stylesheet' href='Styles\first_structure.css'/>
+		<style>
+        body {
+          background-color: #f9eecd;
+        }
+        </style>
+	</head>
+<div class = "all">
+
+	<body>
+	
+		<div class="content1">
+		<h1><img src="Chibi_Asuna.png" alt="Logo" width="200"></img> Welcome to Duy Le's page</h1>
+		<hr>
+
+        </div>
+
+        <div class="grid">
+        <div class="one"><a href="index.html"> Home Page</a></div>
+	    <div class="two">
+	    	<div onclick="drop()" class="dropShop">LOL-BF-Prepaid Shop <i class="fa fa-angle-down" style="font-size:24px"></i></div>
+	    	<ul id="dropScript" class="shop-content">
+		    <li><a onclick="test.location.href='lol.html';document.getElementById('test').frameBorder=3">League of Legends Shop</a></li>
+		    <li><a onclick="test.location.href='bundles.html';document.getElementById('test').frameBorder=3">Brave Frontier Bundles Shop</a></li>
+		    <li><a onclick="test.location.href='prepaid.html';document.getElementById('test').frameBorder=3">Phone Prepaid Cards Shop</a></li>
+			</ul>
+	    </div>
+	    <nav class="three">
+	    	<div onclick="drop2()" class="dropMicrosoft">Microsoft Service <i class="fa fa-angle-down" style="font-size:24px"></i></div>
+	    	<ul id="dropScript2" class="microsoft-content">
+		    <li><a onclick="test.location.href='office.html';document.getElementById('test').frameBorder=3">Office 365 - One Drive 5TB</a></li>
+		    <li><a onclick="test.location.href='keyMenu.html';document.getElementById('test').frameBorder=3">Key Windows/Office</a></li>
+		    <li><a href="#">Windows Installation Service</a></li>
+			</ul>
+	    </nav>
+	    <div class="four">Google Drive Unlimited</div>
+	    <div class="five">Tutoring Services</div>
+	    </div>
+
+		<hr>
+
+
+		<div class = "contents">
+
+		<iframe src="contents.html" frameborder="0" name="test" id="test" width="100%" height="100%"></iframe>
+
+
+		</div>
+
+
+
+	</body>
+
+	<footer>
+		<h1>Contact:</h1>
+		<h2>My Facebook Page: <a href="https://facebook.com/yuukikun002">Facebook</a></h2>
+		<h2>My Phone Number: <a href="tel:+13043969506">+1(304)396-9506</a></h2>
+		<h2>My Email Address: <a href="mailto:yuukikun002@yuukikun002.com">yuukikun002@yuukikun002.com</a></h2>
+
+        </div>
+	</footer>
+</div>
+
+	</html>
+
+<script>
+function drop() {
+  document.getElementById("dropScript").classList.toggle("show");
+}
+
+function drop2() {
+  document.getElementById("dropScript2").classList.toggle("show2");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropShop')) {
+    var dropdowns = document.getElementsByClassName("shop-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropMicrosoft')) {
+    var dropdowns2 = document.getElementsByClassName("microsoft-content");
+    var j;
+    for (j = 0; j < dropdowns2.length; j++) {
+      var openDropdown2 = dropdowns2[j];
+      if (openDropdown2.classList2.contains('show2')) {
+        openDropdown2.classList2.remove('show2');
+      }
+    }
+  }
+}
+
+</script>

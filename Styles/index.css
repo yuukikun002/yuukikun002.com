@@ -2,31 +2,43 @@
 Yay CSS Comments
 Blah blah
 */
+
 .all{
   position: absolute;
   left: 50%;
-  top: 40%;
+  top: 50%;
   transform: translate(-50%,-50%);
 }
-
 .content{
 
 }
 
-.grid{
-  display: grid;
 
-  grid-template-areas:
-  "one two three four five";
-
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-
-}
 
 div{
   padding: 0em;
 }
 
+
+.grid{
+  display: grid;
+
+  grid-template-areas:
+  "one two three four"
+  "five six seven eight";
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.contents{
+  border:1px solid black;
+  background-color:white;
+  height:1000px;
+  position:absolute;
+  left:000px;
+  right:000px;
+}
 /*
 two
 */
@@ -86,6 +98,9 @@ three
 
 .three:hover .dropMicrosoft {background-color: #3e8e41;}
 
+.map{
+  left: 100px;
+}
 
 .one{
   grid-area: one;
@@ -98,16 +113,14 @@ three
   grid-area: two;
   background-color: #42f5aa;
   text-align: center;
-  padding: 15px;
-  position: relative;
-  display: inline-block;
+  padding: 35px;
 }
 
 .three{
   grid-area: three;
   background-color: #42f5aa;
   text-align: center;
-  padding: 15px;
+  padding: 35px;
 }
 
 .four{
@@ -124,6 +137,27 @@ three
   padding: 35px;
 }
 
+.six{
+  grid-area: six;
+  background-color: #42f5aa;
+  text-align: center;
+  padding: 35px;
+}
+
+.seven{
+  grid-area: seven;
+  background-color: #42f5aa;
+  text-align: center;
+  padding: 35px;
+}
+
+.eight{
+  grid-area: eight;
+  background-color: #42f5aa;
+  text-align: center;
+  padding: 35px;
+}
+
 .show{
   display: block;
 }
@@ -132,22 +166,43 @@ three
   display: block;
 }
 
-.contents{
-  border:1px solid black;
-  background-color:white;
-  height:520px;
-  position:absolute;
-  left:000px;
-  right:000px;
-  top:360px;
-}
+
+
 
 footer{
-  border:1px solid black;
-  background-color:#42f5aa;
-  height:600px;
-  position:absolute;
-  left:000px;
-  right:000px;
-  top:880px;
+    display: flex;
+    position: relative;
+    bottom: 10;
+    left: 0;
+    top: 1000px;
+    padding:2rem;
+    background: #252525;
+    color: white;
+}
+
+.footer_wrapper{
+    display: flex;
+    justify-content:  space-between;
+    align-items: left;
+    flex-wrap: wrap;
+    max-width: 2000px;
+    width: 100%;
+    margin: auto;
+    margin: 0 3.5rem 0 3.5rem;
+}
+
+.link_footer{
+    text-decoration: underline;
+
+}
+
+.footer_wrapper a{
+    color: white;
+}
+.footer_wrapper a:hover{
+    text-decoration-style: wavy;
+}
+
+.footer_right{
+    text-align: right;
 }
