@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Duy Le">
+		<title>Duy Le</title>
+		<link rel='stylesheet' href='Styles\change.css'/>
+
+	</head>
+
+	<body>
+
+
+
+        <div class="textBox">
+            <hr>
+            <center><h1>Stay In Touch... Get Notified by Text!</h1></center>
+            <center><h1>Contact the Town Office to sign up.</h1></center>
+            <hr>
+        </div>
+	</body>
+
+
+<style>
+    .slides { width: 100%; }
+    .slides-hidden { display : none; }
+</style>
+
+<script>
+    addEventListener("load",() => { // "load" is safe but "DOMContentLoaded" starts earlier
+        var index = 0;
+        const slides = document.querySelectorAll(".slides");
+        const classHide = "slides-hidden", count = slides.length;
+        nextSlide();
+        function nextSlide() {
+            slides[(index ++) % count].classList.add(classHide);
+            slides[index % count].classList.remove(classHide);
+            setTimeout(nextSlide, 3000);
+        }
+    });
+</script>
+
+<section>
+    <img class="slides slides-hidden" src="Photos\athens1.jpg">
+    <img class="slides slides-hidden" src="Photos\athens2.jpg">
+    <img class="slides slides-hidden" src="Photos\athens3.jpg">
+    <img class="slides slides-hidden" src="Photos\athens4.jpg">
+    <img class="slides slides-hidden" src="Photos\athens5.jpg">
+</section>
