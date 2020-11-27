@@ -3,6 +3,11 @@ Yay CSS Comments
 Blah blah
 */
 
+body {
+  background-color: #f9eecd;
+}
+
+
 .all{
   position: absolute;
   left: 50%;
