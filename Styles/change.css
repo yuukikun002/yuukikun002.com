@@ -3,3 +3,48 @@
 	color: #9d0208;
 }
 
+.grid{
+  display: grid;
+
+  grid-template-areas:
+  "five six seven eight"
+  "one two three four";
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: .5em;
+  grid-column-gap: .5em;
+
+  height: 30vh;
+  margin: 0px;
+  
+}
+
+.one{
+  text-align: center;
+}
+
+.two{
+  text-align: center;
+}
+.three{
+  text-align: center;
+}
+.four{
+  text-align: center;
+}
+.five{
+  text-align: center;
+}
+.six{
+  text-align: center;
+}
+.seven{
+  text-align: center;
+}
+.eight{
+  text-align: center;
+}
+footer{
+	top:10000px;
+}
